@@ -5,7 +5,7 @@ tf.logging.set_verbosity(tf.logging.INFO)
 
 file_path = os.path.dirname(__file__)
 
-model_dir = os.path.join(file_path, 'chinese_L-12_H-768_A-12/')
+model_dir = os.path.join(file_path, 'chinese_L-12_H-768_A-12')
 config_name = os.path.join(model_dir, 'bert_config.json')
 ckpt_name = os.path.join(model_dir, 'bert_model.ckpt')
 output_dir = os.path.join(model_dir, '../tmp/result/')
@@ -23,7 +23,7 @@ gpu_memory_fraction = 0.8
 layer_indexes = [-2]
 
 # 序列的最大程度，单文本建议把该值调小
-max_seq_len = 5
+max_seq_len = 3
 
 # graph名字
 graph_file = 'tmp/result/graph'
